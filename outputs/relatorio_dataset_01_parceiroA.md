@@ -1,62 +1,69 @@
-## Relatório Executivo de Teste A/B de Cashback - Parceiro A
+# Relatório Executivo de Teste A/B de Cashback - Parceiro A
 
-### 1. Resumo Executivo
+**Para:** Liderança de Growth, Equipe de Produto e Marketing
+**De:** Analista de Growth Sênior AI-Native (Méliuz)
+**Data:** 23 de Outubro de 2023
+**Assunto:** Análise Consolidada do Teste A/B de Cashback para o Parceiro A
 
-Este relatório consolida os resultados do teste A/B de cashback realizado com o Parceiro A, que buscou otimizar a relação entre volume de vendas, custo de cashback e lucratividade líquida para o Méliuz. Foram testados três grupos de usuários com diferentes estratégias de cashback.
+---
 
-Embora o Grupo 1 tenha apresentado o maior lucro líquido acumulado e o melhor ROI de cashback, a análise estatística indica que **não há uma diferença estatisticamente significante** entre as variantes. Isso nos leva a uma decisão de "Empate Técnico". Contudo, a análise de dados aponta para a eficiência do Grupo 1 em gerar receita líquida com menor custo de cashback.
+## 1. Resumo Executivo
 
-### 2. Análise Crítica das Variantes
+O teste A/B realizado com o Parceiro A teve como objetivo avaliar o impacto de diferentes ofertas de cashback na performance das campanhas, buscando otimizar o Net Revenue (lucro líquido do Méliuz). Foram testados três grupos de usuários com variações nas porcentagens de cashback.
 
-Apresentamos a performance detalhada de cada grupo:
+Embora o **Grupo 3** tenha gerado o maior volume de vendas totais e atraído o maior número de compradores, ele também incorreu no maior custo de cashback, resultando no **menor Net Revenue** para o Méliuz. Por outro lado, o **Grupo 1**, com o menor custo de cashback, se destacou ao entregar o **maior Net Revenue** e o melhor ROI de Cashback.
 
-| Grupos de usuários | compradores | vendas totais | comissão | cashback | net\_revenue | roi\_cashback | ticket\_medio |
-| :----------------- | ----------: | ------------: | -------: | -------: | -----------: | ------------: | ------------: |
-| Grupo 1            | 9633        | 5.605.170     | 638.135  | 233.424  | **404.711**  | **24.01%**    | 581.87        |
-| Grupo 2            | 10814       | 6.423.100     | 728.178  | 370.659  | 357.519      | 17.33%        | 593.96        |
-| Grupo 3            | 11410       | 6.785.860     | 767.887  | 503.600  | 264.287      | 13.47%        | 594.73        |
+A análise estatística rigorosa, utilizando o Teste T de Student sobre dados diários, indicou que **não há diferença estatisticamente significante** entre os grupos em termos de lucro acumulado. Esta falta de significância é crucial para a tomada de decisão.
 
-*   **Grupo 1:** Apesar de ter o menor número de compradores e vendas totais, este grupo gerou a **maior receita líquida (net_revenue)** de R$ 404.711 e o **melhor ROI de cashback (24.01%)**. Demonstra uma estratégia mais eficiente na conversão de comissão em lucro, devido ao menor desembolso de cashback.
-*   **Grupo 2 e Grupo 3:** Estes grupos atraíram mais compradores e geraram volumes de vendas totais mais altos. No entanto, o custo crescente do cashback (R$ 370.659 para G2 e R$ 503.600 para G3) **diluiu significativamente a receita líquida**, resultando em um ROI de cashback consideravelmente menor.
+---
 
-**O Conceito de "Falso Vencedor":**
-Os Grupos 2 e 3 são exemplos clássicos de "falsos vencedores" se a análise se limitasse apenas a métricas como "compradores" ou "vendas totais". Embora esses grupos tenham gerado um volume maior de transações, o aumento proporcional (ou desproporcional) no custo do cashback os tornou menos lucrativos para o Méliuz. Um "falso vencedor" é uma variante que parece superior em métricas de topo de funil (e.g., volume, engajamento), mas falha em entregar valor real (lucro líquido) ao negócio, devido a custos excessivos ou ineficiências ocultas. Neste caso, o custo elevado do cashback para os Grupos 2 e 3 transformou o que poderia parecer um sucesso de vendas em um cenário de menor rentabilidade líquida.
+## 2. Análise Crítica das Variantes
 
-### 3. Validação Estatística
+Aprofundando na performance de cada grupo, observamos padrões distintos que ressaltam a importância da métrica de Net Revenue:
 
-O veredito do mecanismo estatístico, baseado em um Teste T de Student sobre os dados diários de lucro acumulado, é crucial para a tomada de decisão:
+*   **Grupo 1:** Este grupo, apesar de ter o menor número de compradores e volume de vendas, apresentou a maior eficiência. Com um cashback de R$ 233.424, gerou um Net Revenue de **R$ 404.711** e o maior ROI de Cashback (24.01). Isso demonstra uma alocação mais eficiente do capital de cashback.
+*   **Grupo 2:** Um grupo intermediário, com volumes de compradores e vendas maiores que o Grupo 1, mas com um custo de cashback de R$ 370.659, resultando em um Net Revenue de R$ 357.519. Seu ROI de Cashback foi de 17.33.
+*   **Grupo 3:** Este grupo impulsionou o maior volume de vendas (R$ 6.785.860) e atraiu a maior base de compradores (11.410). No entanto, o custo de cashback foi o mais elevado (R$ 503.600), resultando no **menor Net Revenue (R$ 264.287)** e o menor ROI de Cashback (13.47).
 
-*   **p-valor calculado: 0.1315**
-*   **Decisão Recomendada pelo Sistema: Empate Técnico - Manter Grupo 1 por menor risco**
+### O Conceito de "Falso Vencedor"
 
-**Explicação do p-valor (0.1315):**
-O p-valor é a probabilidade de observarmos uma diferença nos resultados (neste caso, na receita líquida) tão grande ou maior do que a que realmente vimos entre os grupos, **assumindo que não há nenhuma diferença real entre eles na população geral**.
+Os resultados do Grupo 3 exemplificam perfeitamente o conceito de "falso vencedor". Se a análise se limitasse apenas a métricas de vaidade como "vendas totais" ou "número de compradores", o Grupo 3 poderia ser erroneamente considerado o mais bem-sucedido. Contudo, ao incorporar o custo do cashback e focar no **lucro líquido (Net Revenue)**, fica evidente que o maior volume não se traduziu em maior rentabilidade para o Méliuz. O custo adicional do cashback no Grupo 3 canibalizou significativamente a margem de lucro, transformando um aparente "sucesso" em uma operação menos rentável em comparação com o Grupo 1.
 
-Um p-valor de 0.1315 significa que há 13.15% de chance de as diferenças observadas entre os grupos serem puramente devidas ao acaso. Em testes A/B, geralmente utilizamos um nível de significância (alpha) de 0.05 (ou 5%). Se o p-valor for menor que alpha, consideramos a diferença estatisticamente significante.
+---
 
-Como 0.1315 > 0.05, **não podemos rejeitar a hipótese nula**. Em termos práticos, isso significa que não temos evidências estatísticas suficientes para afirmar com confiança (95% de certeza) que a estratégia de cashback do Grupo 1 (ou qualquer outro grupo) é *verdadeiramente* superior à dos demais em termos de lucratividade. As diferenças observadas, embora o Grupo 1 tenha um lucro maior, podem ser resultado de variações aleatórias inerentes ao teste e não de uma superioridade intrínseca da variante.
+## 3. Validação Estatística
 
-**Por que analisar apenas a soma acumulada pode ser perigoso:**
-Focar apenas na "variante com maior Lucro Acumulado" (Grupo 1, neste caso) sem validação estatística é uma armadilha comum em otimização. Sem a significância estatística, a "vitória" do Grupo 1 pode ser um artefato do período de teste ou de flutuações aleatórias.
+O p-valor calculado de **0.1315** é a métrica chave para a nossa decisão. Em termos técnicos, o p-valor representa a probabilidade de observarmos uma diferença de lucro tão grande ou maior entre os grupos como a que vimos, caso, na realidade, não houvesse diferença alguma entre as ofertas de cashback (hipótese nula).
 
-Implementar uma estratégia baseada apenas na soma acumulada sem significância pode levar a:
-1.  **Tomada de decisão equivocada:** Escolher uma variante que não é realmente melhor no longo prazo, desperdiçando recursos e oportunidade.
-2.  **Risco operacional:** Se a "variante vencedora" não for estatisticamente superior, ela pode falhar em replicar o desempenho observado em futuras implementações, resultando em menor receita ou maior custo do que o esperado.
-3.  **Dificuldade de escala:** Uma estratégia não validada pode não escalar eficientemente, perdendo sua efetividade em uma audiência maior ou em diferentes contextos.
+Considerando um nível de significância padrão de 0.05 (ou 5%), um p-valor de 0.1315 (13.15%) é **maior que 0.05**. Isso significa que **não temos evidências estatísticas suficientes para rejeitar a hipótese nula**. Em outras palavras, não podemos afirmar com 95% de confiança que a superioridade observada no Net Revenue do Grupo 1 é realmente causada pela oferta de cashback e não apenas por flutuações aleatórias.
 
-A análise estatística nos protege contra o "viés de observação" e garante que estamos tomando decisões baseadas em evidências robustas, não apenas em tendências superficiais.
+### Por que analisar apenas a soma acumulada pode ser perigoso:
 
-### 4. Decisão Acionável Conclusiva
+A simples observação de que o Grupo 1 teve o "maior lucro acumulado" é um dado importante, mas isoladamente é perigoso para a operação do Méliuz. Sem a validação estatística, essa diferença pode ser fruto do acaso e não de um impacto real da variante.
 
-Com base na análise crítica dos dados e, mais importantemente, no veredito do mecanismo estatístico de "Empate Técnico" e a recomendação de "Manter Grupo 1 por menor risco", a decisão acionável é:
+Se baseássemos decisões estratégicas apenas na soma acumulada sem um teste de significância, correríamos o risco de:
+*   **Implementar uma estratégia ineficaz:** Poderíamos alocar recursos em uma variante que não oferece um benefício real, desperdiçando cashback.
+*   **Ocultar ineficiências:** Uma variante com maior lucro total por acaso pode nos impedir de buscar e otimizar outras ofertas que poderiam gerar ganhos comprovados.
+*   **Decisões baseadas em ruído:** Ignorar a aleatoriedade e o ruído nos dados pode levar a conclusões falhas e a uma otimização subótima das ofertas de cashback.
 
-**Manter a estratégia de cashback do Grupo 1 para o Parceiro A.**
+É por isso que a abordagem AI-Native no Méliuz prioriza a robustez estatística, garantindo que nossas decisões sejam baseadas em insights confiáveis e não em percepções superficiais.
 
-Esta decisão é justificada porque, mesmo na ausência de significância estatística, o Grupo 1 demonstrou a maior receita líquida e o melhor ROI de cashback. Ao manter o Grupo 1, optamos pela variante que, dentro das observações do teste, oferece a melhor performance de lucratividade com o menor desembolso de cashback, minimizando o risco operacional para o Méliuz em um cenário de empate estatístico.
+---
 
-**Próximos passos recomendados:**
-*   Monitorar de perto a performance do Parceiro A sob a estratégia do Grupo 1.
-*   Considerar a realização de testes subsequentes com ajustes menores na estratégia do Grupo 1 ou explorando novos benchmarks para tentar obter uma variante com diferença estatisticamente significativa e maior lucratividade.
+## 4. Decisão Acionável Conclusiva
+
+Com base na análise consolidada dos dados e no veredito do mecanismo estatístico, a recomendação rigorosa é:
+
+**Empate Técnico - Manter Grupo 1 por menor risco.**
+
+**Justificativa:**
+Dado que não há uma diferença estatisticamente significante que comprove que qualquer uma das variantes de maior cashback (Grupo 2 ou 3) gere um Net Revenue superior ao Grupo 1, e considerando que o **Grupo 1 entregou o maior Net Revenue com o menor custo de cashback**, esta é a abordagem mais prudente. Manter a estratégia do Grupo 1 nos permite:
+
+1.  **Maximizar a Rentabilidade no Cenário Atual:** Sem evidências de que um cashback maior traria retornos estatisticamente superiores, o Grupo 1 representa a variante que maximiza o lucro líquido do Méliuz.
+2.  **Minimizar o Risco Operacional e Financeiro:** Evita o desembolso desnecessário de cashback que não demonstrou um retorno proporcional comprovado, protegendo as margens de lucro.
+3.  **Manter a Eficiência:** Foca na eficiência do capital, alinhando-se com uma estratégia de growth sustentável e lucrativa.
+
+Recomendamos manter a política de cashback equivalente à do Grupo 1 para o Parceiro A, enquanto continuamos a monitorar a performance e a explorar futuras otimizações.
 
 ### Evidência Visual da Distribuição
 ![Distribuição de Margem](distribuicao_net_revenue.png)

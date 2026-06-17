@@ -1,3 +1,4 @@
 Nome do Teste,Descrição,Resultado,Decisão Tomada
 dataset_02_parceiroB.csv,Teste A/B de variação de cashback para o Parceiro B.,"Grupo 1 (R$ 286,570.00) vs Grupo 2 (R$ 143,157.00) | p-valor: 0.0000",Escalar Grupo 1
 dataset_03_parceiroC.csv,Teste A/B de variação de cashback para o Parceiro C.,"Grupo 1 (R$ 34,769.00) vs Grupo 2 (R$ 0.00) | p-valor: 0.0000",Escalar Grupo 1
+dataset_01_parceiroA.csv,Teste A/B de variação de cashback para o Parceiro A.,"Grupo 1 (R$ 404,711.00) vs Grupo 2 (R$ 357,519.00) | p-valor: 0.1315",Empate Técnico - Manter Grupo 1 por menor risco
