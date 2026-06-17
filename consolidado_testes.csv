@@ -1,0 +1,3 @@
+Nome do Teste,Descrição,Resultado,Decisão Tomada
+dataset_02_parceiroB.csv,Teste A/B de variação de cashback para o Parceiro B.,"Grupo 1 (R$ 286,570.00) vs Grupo 2 (R$ 143,157.00) | p-valor: 0.0000",Escalar Grupo 1
+dataset_03_parceiroC.csv,Teste A/B de variação de cashback para o Parceiro C.,"Grupo 1 (R$ 34,769.00) vs Grupo 2 (R$ 0.00) | p-valor: 0.0000",Escalar Grupo 1
