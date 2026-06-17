@@ -9,7 +9,7 @@ Esta aplicação automatiza o processamento, a análise estatística e a geraç�
 
 Os resultados de todos os experimentos processados são registrados de forma estruturada:
 
-* **Histórico Consolidado (CSV Local):** Gravado em `consolidado_testes.csv` na raiz do projeto. Contém as colunas solicitadas: *Nome do Teste*, *Descrição*, *Resultado* (incluindo o p-valor) e *Decisão Tomada*.
+* **Histórico Consolidado (CSV Local):** Gravado em `consolidado_testes.csv` na raiz do projeto. Contém as colunas solicitadas: *Nome do Teste*, *Descrição*, *Resultado* (incluindo o p-valor) e *Decisão Tomada*. Armazenado diretamente em [consolidado_testes.csv](https://github.com/lucaspaulo1/teste-meliuz/blob/main/consolidado_testes.csv) na raiz do projeto. Além disso, dentro da pasta `outputs/` as imagens e relatórios estão especificados
 * **Integração com Google Sheets:** O sistema possui suporte nativo à API do Google Sheets (`gspread`). Caso a flag `"usar_google_sheets"` esteja definida como `true` no arquivo `config.json`, os dados serão inseridos diretamente na planilha em nuvem configurada.
 * **Artefatos de Saída:** Os relatórios em Markdown (`.md`) e os gráficos de diagnóstico (`.png`) gerados pelo validador estatístico são exportados para o diretório `outputs/`.
 
