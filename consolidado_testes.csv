@@ -1,2 +1,3 @@
-Nome do Teste,Parceiro,Decisão Tomada,Resultado Resumido
-dataset_01_parceiroA.csv,Parceiro A,Escalar Grupo 1,"Melhor Net Revenue acumulado de R$ 404,711.00"
+Nome do Teste,Parceiro,Decisão Tomada,Resultado Resumido,Descrição,Resultado
+dataset_01_parceiroA.csv,Parceiro A,Escalar Grupo 1,"Melhor Net Revenue acumulado de R$ 404,711.00",,
+dataset_01_parceiroA.csv,,Empate Técnico - Manter Grupo 1 por menor risco,,Teste A/B de incentivo de cashback para o Parceiro A.,Sem diferença significante entre Grupo 1 e Grupo 2 (p-valor: 0.1315)
