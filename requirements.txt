@@ -1,6 +1,9 @@
 pandas
 google-generativeai
 google-genai
+gspread 
+google-auth
 python-dotenv
 scipy
 tabulate
+matplotlib

@@ -1,0 +1,7 @@
+{
+  "alpha_significancia": 0.05,
+  "salvar_graficos": true,
+  "usar_google_sheets": false,
+  "nome_planilha_google": "Tracking de Testes A/B - Growth",
+  "diretorio_outputs": "outputs"
+}
